@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image mapping in HTML</title>
+</head>
+<body>
+    <picture>
+        <source media="(max-width: 600px)" srcset="https://www.w3schools.com/html/pic_trulli.jpg">
+        <img src="https://www.w3schools.com/html/img_food.jpeg" alt="">
+       </picture>
+   <!-- image mapping  -->
+   <img src="https://www.w3schools.com/html/worksplace.jpg" alt="workspace" usemap="#workspace">
+   <map name="workspace">
+    <area shape="rect" coords="34,44,270,350" href="computer.html" alt="computer">
+    <area shape="rect" coords="290,172,333,250" href="phone.html" alt="phone">
+    <area shape="circle" coords="337,300,44" href="cup.html" alt="cup">
+
+    
+   </map>
+</body>
+</html>
